@@ -65,10 +65,10 @@
             Console.WriteLine("Tax: " + product3.GetTax());
             Console.WriteLine();
 
-
+            //total quantity
             int totalQuantity = Product.GetTotalQuantity(product1, product2, product3);
 
-
+            //display totals
             Console.WriteLine("TotalQuantity: " + totalQuantity);
             Console.WriteLine("Total no. of products: " + Product.GetTotalNoProduct());
             Console.WriteLine("Category of Products" + Product.CategoryName); //Output : Electronics

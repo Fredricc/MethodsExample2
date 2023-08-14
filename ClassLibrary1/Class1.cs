@@ -19,7 +19,7 @@
     /*Method for calculating tax
      * cost <=  20000 then tax  = 10%
      cost > 20000 then tax is 12.5%*/
-    public void CalculateTax()
+    public void CalculateTax(double percentage = 4.5)
     {
         // create local variable
         double t;
@@ -31,7 +31,7 @@
         }
         else
         {
-            t = cost * 12.5 / 100;
+            t = cost * percentage / 100;
         }
         tax = t;
     }
