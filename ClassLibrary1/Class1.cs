@@ -49,4 +49,12 @@
     public string GetDateOfPurchase() { return dateOfPurchase; }
     public static void SetTotalNoProduct( int value) { TotalNoProduct = value;}
     public static int GetTotalNoProduct() { return TotalNoProduct; }
+
+    //static method: Calculation Total Quantity
+    public static int GetTotalQuantity(Product product1, Product product2, Product product3)
+    {
+        int total;
+        total = product1.GetQuantityInStock() + product2.GetQuantityInStock() + product3.GetQuantityInStock();
+        return total;
+    }
 }

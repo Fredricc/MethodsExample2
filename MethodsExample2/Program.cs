@@ -66,7 +66,7 @@
             Console.WriteLine();
 
 
-            int totalQuantity = product1.GetQuantityInStock() + product2.GetQuantityInStock() + product3.GetQuantityInStock();
+            int totalQuantity = Product.GetTotalQuantity(product1, product2, product3);
 
 
             Console.WriteLine("TotalQuantity: " + totalQuantity);
