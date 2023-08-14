@@ -47,4 +47,6 @@
     public void SetQuantityInStock(int value) { quantityInStock = value; }
     public int GetQuantityInStock() { return quantityInStock; }
     public string GetDateOfPurchase() { return dateOfPurchase; }
+    public static void SetTotalNoProduct( int value) { TotalNoProduct = value;}
+    public static int GetTotalNoProduct() { return TotalNoProduct; }
 }

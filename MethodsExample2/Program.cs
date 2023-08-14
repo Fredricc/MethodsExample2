@@ -12,11 +12,11 @@
 
             //create objects
             product1 = new Product();
-            Product.TotalNoProduct++;
+            Product.SetTotalNoProduct(Product.GetTotalNoProduct()+1);
             product2 = new Product();
-            Product.TotalNoProduct++;
+            Product.SetTotalNoProduct(Product.GetTotalNoProduct() + 1);
             product3 = new Product();
-            Product.TotalNoProduct++;
+            Product.SetTotalNoProduct(Product.GetTotalNoProduct() + 1);
 
             //Initialize fields
             product1.SetProductID(1001);
@@ -70,7 +70,7 @@
 
 
             Console.WriteLine("TotalQuantity: " + totalQuantity);
-            Console.WriteLine("Total no. of products: " + Product.TotalNoProduct);
+            Console.WriteLine("Total no. of products: " + Product.GetTotalNoProduct());
             Console.WriteLine("Category of Products" + Product.CategoryName); //Output : Electronics
 
             //TO DO: Find out the highest cost of all three products.
