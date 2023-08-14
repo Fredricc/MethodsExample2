@@ -25,7 +25,7 @@
         double t;
 
         //calculate tax
-        if(cost <= 20000)
+        if (cost <= 20000)
         {
             t = cost * 10 / 100;
         }
@@ -36,4 +36,15 @@
         tax = t;
     }
 
+    public void SetProductID(int value) { productID = value; }
+    public int GetProductID() { return productID; }
+    public void SetProductName(string value) { productName = value; }
+    public string GetProductName() { return productName; }
+    public void SetCost(double value) { cost = value; }
+    public double GetCost() { return cost; }
+    public void SetTax(double value) { tax = value; }
+    public double GetTax() { return tax; }
+    public void SetQuantityInStock(int value) { quantityInStock = value; }
+    public int GetQuantityInStock() { return quantityInStock; }
+    public string GetDateOfPurchase() { return dateOfPurchase; }
 }
