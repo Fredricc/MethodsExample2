@@ -32,6 +32,11 @@
             product3.cost = 36000;
             product3.quantityInStock = 1000;
 
+            //Call methods
+            product1.CalculateTax();
+            product2.CalculateTax();
+            product3 .CalculateTax();
+
             //get values from fields
             Console.WriteLine("Product1:");
             Console.WriteLine("ProductID: "+ product1.productID);
@@ -39,6 +44,7 @@
             Console.WriteLine("Cost: "+ product1.cost);
             Console.WriteLine("Quantity in Stock: "+ product1.quantityInStock);
             Console.WriteLine("Date of Purchase: "+ product1.dateOfPurchase);
+            Console.WriteLine("Tax: " + product1.tax);
             Console.WriteLine();
 
             Console.WriteLine("Product2:");
@@ -47,6 +53,7 @@
             Console.WriteLine("Cost: " + product2.cost);
             Console.WriteLine("Quantity in Stock: " + product2.quantityInStock);
             Console.WriteLine("Date of Purchase: " + product2.dateOfPurchase);
+            Console.WriteLine("Tax: " + product2.tax);
             Console.WriteLine();
 
             Console.WriteLine("Product3:");
@@ -55,7 +62,9 @@
             Console.WriteLine("Cost: " + product3.cost);
             Console.WriteLine("Quantity in Stock: " + product3.quantityInStock);
             Console.WriteLine("Date of Purchase: " + product3.dateOfPurchase);
+            Console.WriteLine("Tax: " + product3.tax);
             Console.WriteLine();
+
 
             int totalQuantity = product1.quantityInStock + product2.quantityInStock + product3.quantityInStock;
             Console.WriteLine("TotalQuantity: " + totalQuantity);
