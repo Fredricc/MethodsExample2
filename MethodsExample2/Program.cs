@@ -28,14 +28,14 @@
             product2.SetCost(45000);
             product2.SetQuantityInStock(3400);
             product3.SetProductID(1003);
-            product3.SetProductName("Speeker");
+            product3.SetProductName("Speaker");
             product3.SetCost(36000);
             product3.SetQuantityInStock(1000);
 
             //Call methods
-            product1.CalculateTax();
-            product2.CalculateTax();
-            product3 .CalculateTax();
+            product1.CalculateTax(percentage : 9.2);
+            product2.CalculateTax(7.4);
+            product3 .CalculateTax(15.2);
 
             //get values from fields
             Console.WriteLine("Product1:");
