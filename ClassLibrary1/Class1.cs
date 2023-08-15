@@ -19,7 +19,7 @@
     /*Method for calculating tax
      * cost <=  20000 then tax  = 10%
      cost > 20000 then tax is 12.5%*/
-    public void CalculateTax(ref double percentage)
+    public void CalculateTax(out double percentage)
     {
         percentage = 10.45;
 

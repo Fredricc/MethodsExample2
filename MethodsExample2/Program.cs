@@ -34,13 +34,13 @@
 
             //Call methods
             double q = 7.4;
-            product1.CalculateTax(percentage : ref q);
+            product1.CalculateTax(percentage : out q);
             Console.WriteLine("q is " + q);
 
 
             //ref
-            double p = 7.4;
-            product2.CalculateTax(ref p);
+            double p;
+            product2.CalculateTax(out p);
             Console.WriteLine("p is " + p);
             product3 .CalculateTax(10000, 3.4);
 
