@@ -53,7 +53,7 @@ namespace MethodsExample2
 
             //get values from fields
             Console.WriteLine("\n\t::: " + Employee.companyName + " :::");
-            Console.WriteLine("\n First Employee");
+            Console.WriteLine("\nFirst Employee");
             Console.WriteLine( emp1.empID );
             Console.WriteLine(emp1.empName);
             Console.WriteLine(emp1.job );
