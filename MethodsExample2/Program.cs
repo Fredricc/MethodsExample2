@@ -35,7 +35,7 @@
             //Call methods
             product1.CalculateTax(percentage : 9.2);
             product2.CalculateTax(7.4);
-            product3 .CalculateTax(15.2);
+            product3 .CalculateTax(10000, 3.4);
 
             //get values from fields
             Console.WriteLine("Product1:");

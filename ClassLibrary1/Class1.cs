@@ -36,6 +36,23 @@
         tax = t;
     }
 
+    public void CalculateTax(double cost, double percentage = 4.5)
+    {
+        // create local variable
+        double t;
+
+        //calculate tax
+        if (cost <= 50000)
+        {
+            t = cost * 5 / 100;
+        }
+        else
+        {
+            t = cost * percentage / 100;
+        }
+        tax = t;
+    }
+
     public void SetProductID(int value) { productID = value; }
     public int GetProductID() { return productID; }
     public void SetProductName(string value) { productName = value; }
