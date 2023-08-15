@@ -1,4 +1,6 @@
-﻿namespace MethodsExample2
+﻿using ClassLibrary1;
+
+namespace MethodsExample2
 {
     internal class Sample
     {
@@ -9,6 +11,7 @@
 
             //create reference variable
             Product product1, product2, product3;
+            Employee emp1, emp2, emp3;
 
             //create objects
             product1 = new Product();
@@ -17,6 +20,10 @@
             Product.SetTotalNoProduct(Product.GetTotalNoProduct() + 1);
             product3 = new Product();
             Product.SetTotalNoProduct(Product.GetTotalNoProduct() + 1);
+
+            emp1 = new Employee(101, "Fred", "Developer");
+            emp2 = new Employee(102, "Faith", "CEO");
+            emp3 = new Employee(103, "Hellen", "Marketing Manager");
 
             //Initialize fields
             product1.SetProductID(1001);
@@ -45,6 +52,26 @@
             product3 .CalculateTax(10000, 3.4);
 
             //get values from fields
+
+            Console.WriteLine("First Employee");
+            Console.WriteLine( emp1.empID );
+            Console.WriteLine(emp1.empName);
+            Console.WriteLine(emp1.job );
+            Console.WriteLine();
+
+            Console.WriteLine("Second Employee");
+            Console.WriteLine(emp2.empID);
+            Console.WriteLine(emp2.empName);
+            Console.WriteLine(emp2.job);
+            Console.WriteLine();
+
+            Console.WriteLine("Third Employee");
+            Console.WriteLine(emp3.empID);
+            Console.WriteLine(emp3.empName);
+            Console.WriteLine(emp3.job);
+            Console.WriteLine();
+
+
             Console.WriteLine("Product1:");
             Console.WriteLine("ProductID: "+ product1.GetProductID());
             Console.WriteLine("Product Name: " + product1.GetProductName());
