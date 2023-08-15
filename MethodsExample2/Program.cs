@@ -52,8 +52,8 @@ namespace MethodsExample2
             product3 .CalculateTax(10000, 3.4);
 
             //get values from fields
-
-            Console.WriteLine("First Employee");
+            Console.WriteLine("\n\t::: " + Employee.companyName + " :::");
+            Console.WriteLine("\n First Employee");
             Console.WriteLine( emp1.empID );
             Console.WriteLine(emp1.empName);
             Console.WriteLine(emp1.job );
