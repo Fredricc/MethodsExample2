@@ -19,7 +19,7 @@
                 {
                     _empID = value;
                 }
-             }
+            }
             get { return _empID; }
         }
 
@@ -49,7 +49,7 @@
         {
             set
             {
-                if(value >= 0 && value <= 100)
+                if (value >= 0 && value <= 100)
                 {
                     _tax = value;
                 }
@@ -93,5 +93,8 @@
             t = _salary - _tax;
             return t;
         }
+
+        //Automatic Property
+        public string NativePlace{ get; set; }
     }
 }

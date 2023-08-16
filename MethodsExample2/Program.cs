@@ -23,8 +23,13 @@ namespace MethodsExample2
 
             emp1 = new Employee(101, "Fred", "Developer");
             emp1.Tax = 50;
+            emp1.NativePlace = "Kiambu";
             emp2 = new Employee(102, "Faith", "CEO");
+            emp2.Tax = 50;
+            emp2.NativePlace = "Nairobi";
             emp3 = new Employee(103, "Hellen", "Marketing Manager");
+            emp3.Tax = 50;
+            emp3.NativePlace = "Kiambu";
 
             //Initialize fields
             product1.SetProductID(1001);
@@ -60,6 +65,7 @@ namespace MethodsExample2
             Console.WriteLine(emp1.Job );
             Console.WriteLine("Gross Salary: "+ emp1.Salary );
             Console.WriteLine("Net Salary: " + emp1.CalculateNetSalary() );
+            Console.WriteLine("Native Place: " + emp1.NativePlace );
             Console.WriteLine();
 
             Console.WriteLine("Second Employee");
@@ -68,6 +74,8 @@ namespace MethodsExample2
             Console.WriteLine(emp2.Job);
             Console.WriteLine("Gross Salary: " + emp2.Salary);
             Console.WriteLine("Net Salary: " + emp2.CalculateNetSalary());
+            Console.WriteLine("Native Place: " + emp2.NativePlace);
+
             Console.WriteLine();
 
             Console.WriteLine("Third Employee");
@@ -76,6 +84,7 @@ namespace MethodsExample2
             Console.WriteLine(emp3.Job);
             Console.WriteLine("Gross Salary: "+ emp3.Salary);
             Console.WriteLine("Net Salary: " + emp3.CalculateNetSalary());
+            Console.WriteLine("Native Place: " + emp3.NativePlace);
             Console.WriteLine();
 
 
