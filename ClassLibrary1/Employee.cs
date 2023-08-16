@@ -6,13 +6,20 @@
         private int _empID;
         private string _empName;
         private string _job;
+        private double _salary = 10000;
+        private double _tax;
 
         private static string _companyName;
 
         //property
         public int EmpID
         {
-            set { _empID = value; }
+            set {
+                if (value > 100)
+                {
+                    _empID = value;
+                }
+             }
             get { return _empID; }
         }
 
@@ -26,6 +33,27 @@
         {
             set { _job = value; }
             get { return _job; }
+        }
+
+        //read only property
+        public double Salary
+        {
+            get
+            {
+                return _salary;
+            }
+        }
+
+        //write only property
+        public double Tax
+        {
+            set
+            {
+                if(value >= 0 && value <= 100)
+                {
+                    _tax = value;
+                }
+            }
         }
 
         //Static property
@@ -56,6 +84,14 @@
         static Employee()
         {
             companyName = "Pundit Zone Ltd";
+        }
+
+        //Method
+        public double CalculateNetSalary()
+        {
+            double t;
+            t = _salary - _tax;
+            return t;
         }
     }
 }
