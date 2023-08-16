@@ -8,10 +8,23 @@
         private string _job;
         private double _salary = 10000;
         private double _tax;
+        private string[] _brands = new string[] { "VW", "Toyota", "Mercedes Benz", "Lexus", "BMW" };
 
         private static string _companyName;
 
         //property
+
+        public string this[int index]
+        {
+            set
+            {
+                this._brands[index] = value;
+            }
+            get
+            {
+                return _brands[index];
+            }
+        }
         public int EmpID
         {
             set {

@@ -66,6 +66,7 @@ namespace MethodsExample2
             Console.WriteLine("Gross Salary: "+ emp1.Salary );
             Console.WriteLine("Net Salary: " + emp1.CalculateNetSalary() );
             Console.WriteLine("Native Place: " + emp1.NativePlace );
+            Console.WriteLine("Cars: "+ emp1[4] + ", "+ emp1[2]+ ", " + emp1[3]);
             Console.WriteLine();
 
             Console.WriteLine("Second Employee");
