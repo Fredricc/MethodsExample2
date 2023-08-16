@@ -54,21 +54,21 @@ namespace MethodsExample2
             //get values from fields
             Console.WriteLine("\n\t::: " + Employee.companyName + " :::");
             Console.WriteLine("\nFirst Employee");
-            Console.WriteLine( emp1.empID );
-            Console.WriteLine(emp1.empName);
-            Console.WriteLine(emp1.job );
+            Console.WriteLine( emp1.EmpID );
+            Console.WriteLine(emp1.EmpName);
+            Console.WriteLine(emp1.Job );
             Console.WriteLine();
 
             Console.WriteLine("Second Employee");
-            Console.WriteLine(emp2.empID);
-            Console.WriteLine(emp2.empName);
-            Console.WriteLine(emp2.job);
+            Console.WriteLine(emp2.EmpID);
+            Console.WriteLine(emp2.EmpName);
+            Console.WriteLine(emp2.Job);
             Console.WriteLine();
 
             Console.WriteLine("Third Employee");
-            Console.WriteLine(emp3.empID);
-            Console.WriteLine(emp3.empName);
-            Console.WriteLine(emp3.job);
+            Console.WriteLine(emp3.EmpID);
+            Console.WriteLine(emp3.EmpName);
+            Console.WriteLine(emp3.Job);
             Console.WriteLine();
 
 
