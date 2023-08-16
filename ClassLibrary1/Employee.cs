@@ -95,6 +95,6 @@
         }
 
         //Automatic Property
-        public string NativePlace{ get; set; }
+        public string NativePlace { get; set; } = "Kenya";
     }
 }

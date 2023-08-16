@@ -29,7 +29,7 @@ namespace MethodsExample2
             emp2.NativePlace = "Nairobi";
             emp3 = new Employee(103, "Hellen", "Marketing Manager");
             emp3.Tax = 50;
-            emp3.NativePlace = "Kiambu";
+            //emp3.NativePlace = "Kiambu";
 
             //Initialize fields
             product1.SetProductID(1001);
